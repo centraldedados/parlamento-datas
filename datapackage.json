@@ -1,0 +1,46 @@
+{
+  "name": "parlamento-datas",
+  "title": "Datas das sessões plenárias do Parlamento",
+  "homepage": "https://centraldedados.pt/parlamento-datas/",
+  "description": "Lista das datas de todas as sessões plenárias no Parlamento desde 1976",
+  "version": "0.1.0",
+  "license": "PDDL-1.0",
+  "resources": [
+    {
+      "name": "parlamento-datas",
+      "path": "data/parlamento-datas.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "bytes": 115281,
+      "schema": {
+        "fields": [
+          {
+            "name": "legislatura",
+            "type": "integer",
+            "description": "Número da legislatura"
+          },
+          {
+            "name": "sessao",
+            "type": "integer",
+            "description": "Número da sessão legislativa"
+          },
+          {
+            "name": "numero",
+            "type": "integer",
+            "description": "Número do Diário"
+          },
+          {
+            "name": "data",
+            "type": "date",
+            "description": "Data da sessão"
+          },
+          {
+            "name": "data_pub",
+            "type": "date",
+            "description": "Data da publicação no Diário"
+          }
+        ]
+      }
+    }
+  ]
+}
